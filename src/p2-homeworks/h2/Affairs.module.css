@@ -1,3 +1,41 @@
 .someClass {
-
+    background-color: gray;
+    color: gold;
+    padding: 15px;
 }
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    padding: 4px;
+}
+
+.items span {
+    min-width: 75px;
+}
+
+.items button {
+    height: 20px;
+    border-radius: 7px;
+    transition-duration: 1s;
+}
+
+.items button:hover {
+    background-color: hotpink;
+    color: black;
+}
+
+.button {
+    font-size: 15px;
+    margin: 15px 0 7px 15px;
+    padding: 4px;
+    border-radius: 7px;
+    transition-duration: 1s;
+}
+
+.button:hover {
+    background-color: hotpink;
+    color: black;
+}
+
