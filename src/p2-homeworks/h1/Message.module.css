@@ -1,3 +1,48 @@
-.message {
-
+.container {
+    display: flex;
+    align-items: flex-end;
+    background-color: black;
+    padding: 15px;
 }
+
+.avatar {
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+}
+
+.content {
+    padding: 15px;
+    border-radius:  5px 5px 5px 0;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.angelMessage {
+    width: 15px;
+    height: 15px;
+    background: radial-gradient(circle at 0 0, rgba(0, 0, 0, 0) 15px, rgba(255, 255, 255, 0.5) 0);
+}
+
+.name {
+    font-size: 20px;
+    font-weight: bold;
+    color: aqua;
+    margin-bottom: 5px;
+}
+
+.message {
+    min-width: 300px;
+    font-weight: bold;
+    color: hotpink;
+    word-wrap: break-word;
+}
+
+
+
+.time {
+    display: flex;
+    justify-content: flex-end;
+    color: gold;
+}
+
+
