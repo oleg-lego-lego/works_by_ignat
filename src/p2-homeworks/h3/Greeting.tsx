@@ -14,7 +14,7 @@ const Greeting: React.FC<GreetingPropsType> = (
     {name, setNameCallback, addUser, error, totalUsers,KeyboardOnEnter}
 ) => {
 
-    const inputClass = s.error // need to fix with (?:)
+    const inputClass = error ? s.errorInput : s.input
 
     return (
         <div>
@@ -27,3 +27,4 @@ const Greeting: React.FC<GreetingPropsType> = (
 }
 
 export default Greeting
+
