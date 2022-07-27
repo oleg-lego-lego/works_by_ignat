@@ -11,20 +11,30 @@ type GreetingPropsType = {
 }
 
 const Greeting: React.FC<GreetingPropsType> = (
-    {name, setNameCallback, addUser, error, totalUsers,KeyboardOnEnter}
+    {name, setNameCallback, addUser, error, totalUsers, KeyboardOnEnter}
 ) => {
 
     const inputClass = error ? s.errorInput : s.input
 
     return (
-        <div>
-            <input value={name} onChange={setNameCallback} className={inputClass} onKeyPress={KeyboardOnEnter}/>
-            <span>{error}</span>
-            <button onClick={addUser}>add</button>
-            <span>{totalUsers}</span>
+        <div className={s.greeting}>
+            <div className={s.blockInput}>
+                <input
+                    value={name}
+                    onChange={setNameCallback}
+                    className={inputClass}
+                    onKeyDown={KeyboardOnEnter}
+                />
+                <button onClick={addUser} className={s.button} disabled={!name}>add</button>
+                <div className={s.count}>{totalUsers}</div>
+            </div>
+            <div className={s.error}>{error}</div>
         </div>
     )
 }
 
 export default Greeting
+
+
+
 

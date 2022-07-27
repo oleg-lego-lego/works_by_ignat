@@ -15,9 +15,8 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
         const trimName = e.currentTarget.value.trim()
         if (trimName) {
             setName(trimName)
-            setError('')
+            error && setError('')
         } else {
-            setName('')
             setError('name is /require')
         }
     }
@@ -31,6 +30,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
     const KeyboardOnEnter = (e: KeyboardEvent<HTMLInputElement>) => {
         if (e.key === 'Enter' && name) {
             addUser()
+            setName('')
         }
     }
 

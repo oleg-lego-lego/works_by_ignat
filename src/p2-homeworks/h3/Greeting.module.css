@@ -1,7 +1,53 @@
-.someClass {
+.greeting {
+    padding: 40px;
+    background-color: cadetblue;
+    font-size: 20px;
+}
 
+.blockInput {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
 }
 
 .error {
-    border: 1px solid red;
+    color: red;
 }
+
+.input {
+    outline: none;
+    border: forestgreen solid 3px;
+    border-radius: 5px;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.errorInput {
+    outline: none;
+    border: red solid 2px;
+    border-radius: 5px;
+}
+
+.count {
+    color: gold;
+}
+
+.button {
+    border-radius: 5px;
+    background-color: orange;
+}
+
+.button:hover {
+    background-color: hotpink;
+}
+
+.button:disabled {
+    background: darkgray;
+}
+
+
+
+
+
