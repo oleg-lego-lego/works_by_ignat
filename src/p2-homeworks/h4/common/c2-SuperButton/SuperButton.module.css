@@ -36,10 +36,6 @@
     transition: all .4s;
 }
 
-.default::after {
-    background-color: #fff;
-}
-
 .default:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0;
@@ -56,3 +52,14 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+.button:disabled {
+    background: none;
+    margin: 15px;
+    transform: translateY(0);
+    border: solid 2px black;
+}
+
+.button:disabled:hover {
+    transform: translateY(0);
+    box-shadow: none;
+}
